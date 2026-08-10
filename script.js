@@ -1,0 +1,1 @@
+let lang='en';const btn=document.getElementById('lang');function render(){document.documentElement.lang=lang;document.querySelectorAll('[data-es][data-en]').forEach(e=>e.textContent=e.dataset[lang]);btn.textContent=lang==='en'?'ES / EN':'EN / ES'}btn.onclick=()=>{lang=lang==='en'?'es':'en';render()};render();
