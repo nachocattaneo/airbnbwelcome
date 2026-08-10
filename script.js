@@ -20,6 +20,15 @@ function renderRestaurants() {
 function renderActivities() {
   const target = document.getElementById('activities-panel');
   const activities = siteContent.weeklyActivities;
+
+  if (activities.embed) {
+    target.classList.add('no-frame');
+    target.innerHTML = `<blockquote class="instagram-media" data-instgrm-permalink="${activities.embed}" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:8px; margin:1rem auto; max-width:540px; width:100%;"></blockquote>`;
+    if (window.instgrm) window.instgrm.Embeds.process();
+    return;
+  }
+
+  target.classList.remove('no-frame');
   if (!activities.items.length) {
     target.innerHTML = `<p class="activity-empty">${lang === 'es' ? 'Muy pronto: una selección de planes para esta semana.' : 'Coming soon: a curated selection of plans for this week.'}</p>`;
     return;

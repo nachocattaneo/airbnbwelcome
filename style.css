@@ -1,1 +1,422 @@
-:root{--ink:#24332d;--pine:#1e3029;--sage:#9cac96;--cream:#f6f2eb;--sand:#e7dfd2;--terracotta:#bd6e51;--line:rgba(36,51,45,.17)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif;font-size:16px;line-height:1.6}.shell{width:min(1180px,88vw);margin-inline:auto}.hero{color:#fff;min-height:760px;min-height:100svh;position:relative;isolation:isolate;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(90deg,rgba(20,30,27,.53),rgba(20,30,27,.08)),url("assets/buenos-aires-hero.png") center/cover}.hero:after{content:"";z-index:-1;position:absolute;inset:0;background:linear-gradient(0deg,rgba(18,27,24,.35),transparent 45%)}.nav{padding-top:26px;display:flex;justify-content:space-between;align-items:center}.brand{color:#fff;text-decoration:none;letter-spacing:.18em;font-size:11px;font-weight:600}.brand span{font-family:"Playfair Display",serif;font-style:italic;font-size:14px;font-weight:500;letter-spacing:.05em}.nav-actions{display:flex;align-items:center;gap:22px}.nav-link{color:#fff;text-decoration:none;font-size:12px}.language-toggle{appearance:none;color:white;background:transparent;border:1px solid rgba(255,255,255,.62);padding:8px 11px;border-radius:50px;font:500 11px/1 "DM Sans",sans-serif;letter-spacing:.08em;cursor:pointer}.hero-content{padding:130px 0 105px}.eyebrow{font-size:10px;font-weight:600;letter-spacing:.2em;margin:0 0 20px}.hero h1,h2,h3{font-family:"Playfair Display",serif;font-weight:500;letter-spacing:-.035em;line-height:.98}.hero h1{font-size:clamp(55px,8vw,105px);margin:0;max-width:700px}.hero-lead{font-size:18px;line-height:1.5;max-width:460px;margin:29px 0}.hero-cta{color:#fff;text-decoration:none;font-size:12px;font-weight:600;letter-spacing:.08em;border-bottom:1px solid rgba(255,255,255,.8);padding-bottom:9px}.hero-cta span{font-size:17px;margin-left:7px}.hero-credit{position:absolute;right:6vw;bottom:22px;writing-mode:vertical-rl;font:italic 16px "Playfair Display",serif;letter-spacing:.06em;margin:0;opacity:.86}.welcome{padding:130px 0 120px}.section-heading{max-width:650px}.section-heading h2,.neighborhood h2,.agenda h2,.closing h2{font-size:clamp(42px,5.4vw,70px);margin:0}.section-intro{max-width:470px;margin:27px 0 48px;font-size:17px}.amenities{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.amenity-card{min-height:410px;position:relative;display:flex;flex-direction:column;overflow:hidden;border:1px solid var(--line)}.amenity-photo{width:100%;height:170px;display:block;object-fit:cover}.gym-card .amenity-photo{object-position:center}.pool-card .amenity-photo{object-position:center}.solarium-card .amenity-photo{object-position:center}.amenity-body{padding:22px 25px 25px;display:flex;flex:1;flex-direction:column}.gym-card{background:#e8e2d7}.pool-card{background:var(--pine);color:#fff}.solarium-card{background:#d7c59d}.card-number{font-size:10px;letter-spacing:.18em;margin-bottom:auto}.amenity-card h3{font-size:36px;margin:29px 0 7px}.amenity-card p{max-width:270px;margin:0}.card-detail{margin-top:18px;font-size:9px;font-weight:600;letter-spacing:.14em}.neighborhood{background:var(--sage);padding:125px 0}.neighborhood-grid{display:grid;grid-template-columns:.88fr 1.12fr;gap:10%;align-items:start}.neighborhood-copy p:not(.eyebrow){max-width:380px;margin:27px 0 0}.restaurant-list{border-top:1px solid rgba(36,51,45,.3)}.restaurant{padding:24px 0;border-bottom:1px solid rgba(36,51,45,.3);display:flex;gap:20px;align-items:flex-start;color:inherit;text-decoration:none}.restaurant-index{font-size:10px;padding-top:8px;letter-spacing:.14em}.restaurant h3{font-size:27px;margin:0}.restaurant p{font-size:14px;margin:4px 0 0}.restaurant-arrow{margin-left:auto;font-size:21px;padding-top:3px}.restaurant-empty{margin:0;padding:33px 0;font:italic 22px/1.35 "Playfair Display",serif}.agenda{padding:130px 0}.agenda-heading{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:48px}.agenda-heading .eyebrow{max-width:180px;margin-bottom:8px}.agenda-panel{background:var(--pine);color:#fff;padding:42px;min-height:230px}.activity-week{color:#d5dfd2;font-size:10px;font-weight:600;letter-spacing:.2em;margin:0 0 26px}.activity-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.activity-list li{border-left:1px solid rgba(255,255,255,.4);padding-left:18px}.activity-type{font-size:10px;letter-spacing:.15em;color:#cbd5c8}.activity-list h3{font-size:25px;margin:7px 0}.activity-list p{font-size:14px;line-height:1.4;margin:0}.activity-empty{font:italic 27px/1.25 "Playfair Display",serif;max-width:510px;margin:0}.agenda-note{font-size:13px;color:#68736c;margin:16px 0 0;max-width:470px}.closing{padding:125px 0;background:var(--terracotta);color:#fff}.closing-inner{text-align:center}.closing h2{font-size:clamp(47px,6vw,80px);margin-bottom:40px}.back-top{color:#fff;font-size:12px;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.7);padding-bottom:7px}.footer{height:82px;display:flex;justify-content:space-between;align-items:center;font-size:10px;font-weight:600;letter-spacing:.17em}@media(max-width:850px){.amenities{grid-template-columns:1fr 1fr}.amenity-card:last-child{grid-column:1/-1}}@media(max-width:650px){.shell{width:min(100% - 40px,1180px)}.hero{min-height:680px}.nav-link{display:none}.hero-content{padding:100px 0 76px}.hero-lead{font-size:16px;max-width:360px}.welcome,.agenda{padding:82px 0}.amenities,.neighborhood-grid{grid-template-columns:1fr}.amenity-card,.amenity-card:last-child{grid-column:auto;min-height:0}.amenity-photo{height:205px}.neighborhood{padding:82px 0}.neighborhood-grid{gap:48px}.agenda-heading{display:block;margin-bottom:30px}.agenda-heading .eyebrow{margin-bottom:18px}.agenda-panel{padding:28px 24px}.activity-list{grid-template-columns:1fr;gap:20px}.activity-list li{padding-bottom:2px}.activity-empty{font-size:24px}.closing{padding:85px 0}.footer{height:65px}.hero-credit{right:20px}.restaurant h3{font-size:24px}}
+:root {
+  --ink: #24332d;
+  --pine: #1e3029;
+  --sage: #9cac96;
+  --cream: #f6f2eb;
+  --sand: #e7dfd2;
+  --terracotta: #bd6e51;
+  --line: rgba(36, 51, 45, .17);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.shell {
+  width: min(1180px, 88vw);
+  margin-inline: auto;
+}
+
+.hero {
+  color: #fff;
+  min-height: 760px;
+  min-height: 100svh;
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(90deg, rgba(20, 30, 27, .53), rgba(20, 30, 27, .08)), url("assets/buenos-aires-hero.png") center/cover;
+}
+
+.hero:after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(18, 27, 24, .35), transparent 45%);
+}
+
+.nav {
+  padding-top: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: .18em;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.brand span {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .05em;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.language-toggle {
+  appearance: none;
+  color: white;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, .62);
+  padding: 8px 11px;
+  border-radius: 50px;
+  font: 500 11px/1 "DM Sans", sans-serif;
+  letter-spacing: .08em;
+  cursor: pointer;
+}
+
+.hero-content { padding: 130px 0 105px; }
+
+.eyebrow {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .2em;
+  margin: 0 0 20px;
+}
+
+.hero h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  letter-spacing: -.035em;
+  line-height: .98;
+}
+
+.hero h1 {
+  font-size: clamp(55px, 8vw, 105px);
+  margin: 0;
+  max-width: 700px;
+}
+
+.hero-lead {
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 460px;
+  margin: 29px 0;
+}
+
+.hero-cta {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  border-bottom: 1px solid rgba(255, 255, 255, .8);
+  padding-bottom: 9px;
+}
+
+.hero-cta span {
+  font-size: 17px;
+  margin-left: 7px;
+}
+
+.hero-credit {
+  position: absolute;
+  right: 6vw;
+  bottom: 22px;
+  writing-mode: vertical-rl;
+  font: italic 16px "Playfair Display", serif;
+  letter-spacing: .06em;
+  margin: 0;
+  opacity: .86;
+}
+
+.welcome { padding: 130px 0 120px; }
+
+.section-heading { max-width: 650px; }
+
+.section-heading h2,
+.neighborhood h2,
+.agenda h2,
+.closing h2 {
+  font-size: clamp(42px, 5.4vw, 70px);
+  margin: 0;
+}
+
+.section-intro {
+  max-width: 470px;
+  margin: 27px 0 48px;
+  font-size: 17px;
+}
+
+.amenities {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.amenity-card {
+  min-height: 410px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+
+.amenity-photo {
+  width: 100%;
+  height: 170px;
+  display: block;
+  object-fit: cover;
+}
+
+.gym-card .amenity-photo { object-position: center; }
+.pool-card .amenity-photo { object-position: center; }
+.solarium-card .amenity-photo { object-position: center; }
+
+.amenity-body {
+  padding: 22px 25px 25px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.gym-card { background: #e8e2d7; }
+.pool-card { background: var(--pine); color: #fff; }
+.solarium-card { background: #d7c59d; }
+
+.card-number {
+  font-size: 10px;
+  letter-spacing: .18em;
+  margin-bottom: auto;
+}
+
+.amenity-card h3 {
+  font-size: 36px;
+  margin: 29px 0 7px;
+}
+
+.amenity-card p {
+  max-width: 270px;
+  margin: 0;
+}
+
+.card-detail {
+  margin-top: 18px;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: .14em;
+}
+
+.neighborhood {
+  background: var(--sage);
+  padding: 125px 0;
+}
+
+.neighborhood-grid {
+  display: grid;
+  grid-template-columns: .88fr 1.12fr;
+  gap: 10%;
+  align-items: start;
+}
+
+.neighborhood-copy p:not(.eyebrow) {
+  max-width: 380px;
+  margin: 27px 0 0;
+}
+
+.restaurant-list { border-top: 1px solid rgba(36, 51, 45, .3); }
+
+.restaurant {
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(36, 51, 45, .3);
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  color: inherit;
+  text-decoration: none;
+}
+
+.restaurant-index {
+  font-size: 10px;
+  padding-top: 8px;
+  letter-spacing: .14em;
+}
+
+.restaurant h3 {
+  font-size: 27px;
+  margin: 0;
+}
+
+.restaurant p {
+  font-size: 14px;
+  margin: 4px 0 0;
+}
+
+.restaurant-arrow {
+  margin-left: auto;
+  font-size: 21px;
+  padding-top: 3px;
+}
+
+.restaurant-empty {
+  margin: 0;
+  padding: 33px 0;
+  font: italic 22px/1.35 "Playfair Display", serif;
+}
+
+.agenda { padding: 130px 0; }
+
+.agenda-heading {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.agenda-heading .eyebrow {
+  margin-top: 14px;
+  max-width: 180px;
+  margin-inline: auto;
+}
+
+.agenda-panel {
+  background: var(--pine);
+  color: #fff;
+  padding: 42px;
+  min-height: 230px;
+}
+
+.agenda-panel.no-frame {
+  background: none;
+  padding: 0;
+  min-height: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.activity-week {
+  color: #d5dfd2;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .2em;
+  margin: 0 0 26px;
+}
+
+.activity-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.activity-list li {
+  border-left: 1px solid rgba(255, 255, 255, .4);
+  padding-left: 18px;
+}
+
+.activity-type {
+  font-size: 10px;
+  letter-spacing: .15em;
+  color: #cbd5c8;
+}
+
+.activity-list h3 {
+  font-size: 25px;
+  margin: 7px 0;
+}
+
+.activity-list p {
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.activity-empty {
+  font: italic 27px/1.25 "Playfair Display", serif;
+  max-width: 510px;
+  margin: 0;
+}
+
+.agenda-note {
+  font-size: 13px;
+  color: #68736c;
+  margin: 16px 0 0;
+  max-width: 470px;
+}
+
+.closing {
+  padding: 125px 0;
+  background: var(--terracotta);
+  color: #fff;
+}
+
+.closing-inner { text-align: center; }
+
+.closing h2 {
+  font-size: clamp(47px, 6vw, 80px);
+  margin-bottom: 40px;
+}
+
+.back-top {
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, .7);
+  padding-bottom: 7px;
+}
+
+.footer {
+  height: 82px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .17em;
+}
+
+@media (max-width: 850px) {
+  .amenities { grid-template-columns: 1fr 1fr; }
+  .amenity-card:last-child { grid-column: 1 / -1; }
+}
+
+@media (max-width: 650px) {
+  .shell { width: min(100% - 40px, 1180px); }
+  .hero { min-height: 680px; }
+  .nav-link { display: none; }
+  .hero-content { padding: 100px 0 76px; }
+  .hero-lead { font-size: 16px; max-width: 360px; }
+  .welcome, .agenda { padding: 82px 0; }
+  .amenities, .neighborhood-grid { grid-template-columns: 1fr; }
+  .amenity-card, .amenity-card:last-child { grid-column: auto; min-height: 0; }
+  .amenity-photo { height: 205px; }
+  .neighborhood { padding: 82px 0; }
+  .neighborhood-grid { gap: 48px; }
+  .agenda-heading { margin-bottom: 30px; }
+  .agenda-panel { padding: 28px 24px; }
+  .activity-list { grid-template-columns: 1fr; gap: 20px; }
+  .activity-list li { padding-bottom: 2px; }
+  .activity-empty { font-size: 24px; }
+  .closing { padding: 85px 0; }
+  .footer { height: 65px; }
+  .hero-credit { right: 20px; }
+  .restaurant h3 { font-size: 24px; }
+}
