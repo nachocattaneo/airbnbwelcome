@@ -1,21 +1,105 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Welcome to Buenos Aires</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body>
-<header class="hero"><div class="nav"><div class="brand">BUENOS AIRES · YOUR STAY</div><button id="lang">ES / EN</button></div><div class="hero-copy"><p class="eyebrow">PALERMO HOLLYWOOD</p><h1 data-es="Bienvenido/a a Buenos Aires." data-en="Welcome to Buenos Aires."></h1><p data-es="Todo lo que necesitás para disfrutar tu estadía, el edificio y el barrio." data-en="Everything you need to enjoy your stay, the building and the neighborhood."></p></div></header>
-<main>
-<section class="intro"><p class="eyebrow" data-es="BIENVENIDA" data-en="WELCOME"></p><h2 data-es="Sentite como en casa." data-en="Make yourself at home."></h2><p data-es="Preparamos este espacio con especial atención para que disfrutes una estadía cómoda, relajada y memorable." data-en="We prepared this space with special attention to make your stay comfortable, relaxed and memorable."></p></section>
-<section class="grid">
-<article class="card"><span>01</span><h3 data-es="Gimnasio" data-en="Gym"></h3><p data-es="Para acceder al gimnasio, dirigite al piso 9." data-en="To access the gym, go to the 9th floor."></p></article>
-<article class="card"><span>02</span><h3 data-es="Piscina" data-en="Pool"></h3><p data-es='Tomá el ascensor y presioná el botón "EP".' data-en='Take the elevator and press the "EP" button.'></p></article>
-<article class="card"><span>03</span><h3>Wi-Fi</h3><p>SSID: <strong>COMPLETAR</strong><br>Password: <strong>COMPLETAR</strong></p></article>
-<article class="card"><span>04</span><h3 data-es="Check-out" data-en="Check-out"></h3><p data-es="Hora: COMPLETAR. Dejá las llaves según las instrucciones del departamento." data-en="Time: TO COMPLETE. Leave the keys according to the apartment instructions."></p></article>
-</section>
-<section class="guide"><p class="eyebrow">PALERMO HOLLYWOOD</p><h2 data-es="Salí y descubrí el barrio." data-en="Go out and discover the neighborhood."></h2><p class="lead" data-es="Una zona llena de restaurantes, cafés, bares y vida nocturna, ideal para recorrer caminando." data-en="A neighborhood full of restaurants, cafés, bars and nightlife, ideal for exploring on foot."></p><div class="places">
-<a class="place" href="https://www.google.com/maps/search/?api=1&query=Hierro+Parrilla+Palermo" target="_blank"><b>Hierro Parrilla</b><span>Parrilla · Costa Rica 5602</span></a>
-<a class="place" href="https://www.google.com/maps/search/?api=1&query=Vive+Café+Palermo" target="_blank"><b>Vive Café</b><span>Café de especialidad · Costa Rica 5722</span></a>
-<a class="place" href="https://www.google.com/maps/search/?api=1&query=Siembra+Cafe+Palermo" target="_blank"><b>Siembra Café</b><span>Café · Humboldt 1906</span></a>
-<a class="place" href="https://www.google.com/maps/search/?api=1&query=Cofi+Jaus+Palermo" target="_blank"><b>Cofi Jaus</b><span>Café · Humboldt 1793</span></a>
-<a class="place" href="https://www.google.com/maps/search/?api=1&query=Norimoto+Buenos+Aires" target="_blank"><b>Norimōto</b><span>Japonesa · Amenábar 3</span></a>
-<a class="place" href="https://www.google.com/maps/search/?api=1&query=CHIC+Fuegos+Vinos+Palermo" target="_blank"><b>CHIC · Fuegos & Vinos</b><span>Parrilla · Fitz Roy 1617</span></a>
-</div></section>
-<section class="quick"><h2 data-es="Lo esencial" data-en="Essentials"></h2><div class="quick-grid"><div><b>Emergencias</b><span>911</span></div><div><b>Transporte</b><span>Uber · Cabify</span></div><div><b>Supermercado</b><span>Jumbo · Carrefour</span></div><div><b>Farmacia</b><span>Farmacity</span></div></div></section>
-<section class="contact"><p class="eyebrow" data-es="¿NECESITÁS AYUDA?" data-en="NEED HELP?"></p><h2 data-es="Estamos para ayudarte." data-en="We're here to help."></h2><p data-es="WhatsApp: COMPLETAR" data-en="WhatsApp: TO COMPLETE"></p></section>
-</main><footer>BUENOS AIRES · PALERMO HOLLYWOOD</footer><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Guía de bienvenida para tu estadía en Buenos Aires.">
+    <title>Casa Buenos Aires · Guest guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <nav class="nav shell" aria-label="Navegación principal">
+        <a class="brand" href="#top" aria-label="Casa Buenos Aires">CASA <span>BUENOS AIRES</span></a>
+        <div class="nav-actions">
+          <a class="nav-link" href="#agenda" data-es="Agenda" data-en="What's on"></a>
+          <button class="language-toggle" id="lang" type="button" aria-label="Change language"></button>
+        </div>
+      </nav>
+      <div class="hero-content shell">
+        <p class="eyebrow" data-es="PALERMO · BUENOS AIRES" data-en="PALERMO · BUENOS AIRES"></p>
+        <h1 data-es="Tu refugio<br>en la ciudad." data-en="Your haven<br>in the city."></h1>
+        <p class="hero-lead" data-es="Todo lo que necesitás para disfrutar una estadía tranquila, cómoda y muy porteña." data-en="Everything you need for a peaceful, comfortable and truly Buenos Aires stay."></p>
+        <a class="hero-cta" href="#stay" data-es="Descubrí la guía <span aria-hidden='true'>↓</span>" data-en="Explore the guide <span aria-hidden='true'>↓</span>"></a>
+      </div>
+      <p class="hero-credit">Buenos Aires</p>
+    </header>
+
+    <main>
+      <section class="welcome shell" id="stay">
+        <div class="section-heading">
+          <p class="eyebrow" data-es="DURANTE TU ESTADÍA" data-en="DURING YOUR STAY"></p>
+          <h2 data-es="Un respiro, sin salir de casa." data-en="A little escape, without leaving home."></h2>
+        </div>
+        <p class="section-intro" data-es="El edificio cuenta con espacios pensados para que puedas bajar el ritmo o mantener tu rutina." data-en="The building has spaces designed for you to slow down or keep your routine."></p>
+        <div class="amenities">
+          <article class="amenity-card gym-card">
+            <img class="amenity-photo" src="assets/gimnasio.jpg" alt="Gimnasio del edificio">
+            <div class="amenity-body">
+              <span class="card-number">01</span>
+              <h3 data-es="Gimnasio" data-en="Gym"></h3>
+              <p data-es="Encontralo en el piso 9 del edificio." data-en="Find it on the building's 9th floor."></p>
+              <span class="card-detail" data-es="PISO 9" data-en="9TH FLOOR"></span>
+            </div>
+          </article>
+          <article class="amenity-card pool-card">
+            <img class="amenity-photo" src="assets/piscina.jpg" alt="Piscina del edificio">
+            <div class="amenity-body">
+              <span class="card-number">02</span>
+              <h3 data-es="Piscina" data-en="Pool"></h3>
+              <p data-es="Tomá el ascensor y presioná el botón “EP”." data-en="Take the elevator and press the “EP” button."></p>
+              <span class="card-detail" data-es="ASCENSOR · EP" data-en="ELEVATOR · EP"></span>
+            </div>
+          </article>
+          <article class="amenity-card solarium-card">
+            <img class="amenity-photo" src="assets/solarium.jpg" alt="Solárium del edificio">
+            <div class="amenity-body">
+              <span class="card-number">03</span>
+              <h3 data-es="Solárium" data-en="Solarium"></h3>
+              <p data-es="Está en el piso 9, junto al gimnasio." data-en="It is on the 9th floor, next to the gym."></p>
+              <span class="card-detail" data-es="PISO 9 · JUNTO AL GIMNASIO" data-en="9TH FLOOR · NEXT TO THE GYM"></span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="neighborhood" id="restaurants">
+        <div class="shell neighborhood-grid">
+          <div class="neighborhood-copy">
+            <p class="eyebrow" data-es="A UNAS CUADRAS" data-en="JUST A FEW BLOCKS AWAY"></p>
+            <h2 data-es="Sabores para<br>guardar." data-en="Flavours worth<br>remembering."></h2>
+            <p data-es="Restaurantes, cafés y mesas especiales elegidas para vos. Esta selección se irá actualizando con nuestros favoritos." data-en="Restaurants, cafés and special tables selected for you. This collection will be updated with our favourite spots."></p>
+          </div>
+          <div class="restaurant-list" id="restaurant-list" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="agenda shell" id="agenda">
+        <div class="agenda-heading">
+          <p class="eyebrow" data-es="ESTA SEMANA EN BUENOS AIRES" data-en="THIS WEEK IN BUENOS AIRES"></p>
+          <h2 data-es="La ciudad está<br>pasando ahora." data-en="The city is happening<br>right now."></h2>
+        </div>
+        <div class="agenda-panel" id="activities-panel" aria-live="polite"></div>
+        <p class="agenda-note" data-es="La agenda se actualiza semanalmente con una selección especial para nuestros huéspedes." data-en="The agenda is updated weekly with a special selection for our guests."></p>
+      </section>
+
+      <section class="closing">
+        <div class="shell closing-inner">
+          <p class="eyebrow" data-es="BUEN VIAJE" data-en="ENJOY YOUR STAY"></p>
+          <h2 data-es="Que Buenos Aires<br>te sorprenda." data-en="May Buenos Aires<br>surprise you."></h2>
+          <a href="#top" class="back-top" data-es="Volver arriba ↑" data-en="Back to top ↑"></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer shell">
+      <span>CASA BUENOS AIRES</span>
+      <span>PALERMO</span>
+    </footer>
+    <script src="content.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
