@@ -165,6 +165,25 @@ body {
   font-size: 17px;
 }
 
+.stay-intro {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--ink);
+  max-width: 950px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .stay-intro {
+    font-size: 17px;
+    margin-bottom: 40px;
+  }
+}
+
 .amenities {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
