@@ -224,12 +224,12 @@ body {
 .card-number {
   font-size: 10px;
   letter-spacing: .18em;
-  margin-bottom: auto;
+  margin-bottom: 29px;
 }
 
 .amenity-card h3 {
   font-size: 36px;
-  margin: 29px 0 7px;
+  margin: 0 0 7px;
 }
 
 .amenity-card p {
