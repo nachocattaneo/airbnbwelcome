@@ -96,7 +96,7 @@ const siteContent = {
   weeklyActivities: {
     sourceUrl: '',
     week: { es: '', en: '' },
-    embed: 'https://www.instagram.com/p/Dbq6TSUiZTh/', 
+    embed: 'https://www.instagram.com/p/Db9FzVnCbDM/?img_index=1', 
     items: []
   }
 };
