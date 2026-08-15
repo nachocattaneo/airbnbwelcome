@@ -23,11 +23,12 @@ function renderActivities() {
 
   if (activities.embeds?.length) {
     target.classList.add('no-frame');
-    target.innerHTML = activities.embeds.map((embed, index) => `
+    target.innerHTML = activities.embeds.map((embed) => `
       <div class="agenda-embed">
         <h3 class="agenda-embed-title">${copy(embed.title)}</h3>
-        <blockquote class="instagram-media" data-instgrm-permalink="${embed.url}" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:8px; margin:1rem auto 2.5rem; max-width:540px; width:100%;"></blockquote>
-      </div>`).join('');
+        <blockquote class="instagram-media" data-instgrm-permalink="${embed.url}" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:8px; margin:0 auto; max-width:540px; width:100%;"></blockquote>
+      </div>
+    `).join('');
     if (window.instgrm) window.instgrm.Embeds.process();
     return;
   }
