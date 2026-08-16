@@ -24,7 +24,7 @@ function renderActivities() {
   if (activities.embeds?.length) {
     target.classList.add('no-frame');
     target.innerHTML = activities.embeds.map((embed) => `
-      <div class="agenda-embed" style="background:#1e3029; padding:28px 28px 30px; width:min(596px,100%);">
+      <div class="agenda-embed" style="background:#1e3029; padding:28px 28px 30px; width:100%; max-width:596px; margin:0 auto 34px;">
         <h3 class="agenda-embed-title" style="color:#fff; font-family:'DM Sans',sans-serif; font-size:12px; font-weight:600; letter-spacing:.16em; text-transform:uppercase; margin:0 0 14px; text-align:left;">${copy(embed.title)}</h3>
         <blockquote class="instagram-media" data-instgrm-permalink="${embed.url}" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:8px; margin:0 auto; max-width:540px; width:100%;"></blockquote>
       </div>
