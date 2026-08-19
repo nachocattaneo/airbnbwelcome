@@ -1,4 +1,4 @@
-let lang = 'es';
+let lang = guestConfig.defaultLanguage;
 
 const copy = (value) => value?.[lang] || value?.es || '';
 const button = document.getElementById('lang');
@@ -48,6 +48,10 @@ function renderActivities() {
 
 function renderLanguage() {
   document.documentElement.lang = lang;
+  document.getElementById('guest-welcome').textContent =
+  lang === 'es'
+    ? guestConfig.welcomeEs
+    : guestConfig.welcomeEn;
   document.querySelectorAll('[data-es][data-en]').forEach((element) => {
     element.innerHTML = element.dataset[lang];
   });

@@ -1,9 +1,13 @@
-/*
-  Actualizaciones futuras
-  - Restaurantes: agregá objetos a restaurants.
-  - Actividades: cuando recibas una fuente semanal, reemplazá week e items.
-  La web muestra estos datos dentro de la página; sourceUrl es solo una referencia interna.
-*/
+const guestConfig = {
+  welcomeEs: 'BIENVENIDA, LIANNE!',
+  welcomeEn: 'WELCOME, LIANNE!',
+  defaultLanguage: 'en',
+
+  agendas: {
+  instagram: 'https://www.instagram.com/p/DcPH-yIiY0f/?img_index=1',
+  timeOut: 'https://www.instagram.com/p/Dbf1Y_xFHSq/?img_index=1'
+}
+};
 const siteContent = {
   restaurants: [
     {
@@ -99,11 +103,11 @@ const siteContent = {
     embeds: [
       {
         title: { es: 'Agenda gastronómica', en: 'Food & dining guide' },
-        url: 'https://www.instagram.com/p/Db9FzVnCbDM/?img_index=1'
+        url: guestConfig.agendas.instagram
       },
       {
         title: { es: 'Agenda cultural', en: 'Cultural guide' },
-        url: 'https://www.instagram.com/p/Dbf1Y_xFHSq/?img_index=1'
+        url: guestConfig.agendas.timeOut
       }
     ],
     items: []
