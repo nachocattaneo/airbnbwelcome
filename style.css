@@ -469,3 +469,29 @@ body {
   font-style: italic;
   opacity: .75;
 }
+
+.guest-dates {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 18px 0 35px;
+}
+
+.guest-dates > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.guest-date-label {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: .18em;
+  margin-bottom: 3px;
+  opacity: .8;
+}
+
+#check-in,
+#check-out {
+  font-family: "Playfair Display", serif;
+  font-size: 19px;
+}

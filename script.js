@@ -55,11 +55,67 @@ function renderLanguage() {
   button.setAttribute('aria-label', lang === 'es' ? 'Switch to English' : 'Cambiar a español');
   renderRestaurants();
   renderActivities();
+  renderGuestDates();
 }
 
 button.addEventListener('click', () => {
   lang = lang === 'es' ? 'en' : 'es';
   renderLanguage();
 });
+
+function formatGuestDate(dateString) {
+  const [day, month, year] = dateString.split('/');
+
+  const date = new Date(year, month - 1, day);
+
+  const options = lang === 'es'
+  ? { day: '2-digit', month: 'short', year: 'numeric' }
+  : { month: 'short', day: '2-digit', year: 'numeric' };
+
+const formatted = new Intl.DateTimeFormat(
+  lang === 'es' ? 'es-AR' : 'en-US',
+  options
+).format(date);
+
+return lang === 'es'
+  ? formatted.replace(/\sde\s/g, ' ').replace(/\sde\s/g, ' ')
+  : formatted;
+
+  return new Intl.DateTimeFormat(
+    lang === 'es' ? 'es-AR' : 'en-US',
+    options
+  ).format(date);
+}
+
+function renderGuestDates() {
+  if (!guestCheckIn || !guestCheckOut) return;
+
+  document.getElementById('check-in').textContent =
+    formatGuestDate(guestCheckIn);
+
+  document.getElementById('check-out').textContent =
+    formatGuestDate(guestCheckOut);
+}
+
+async function loadGuestDates() {
+  try {
+    const response = await fetch('/.netlify/functions/airbnb-calendar');
+
+    if (!response.ok) {
+      throw new Error('Could not load guest dates');
+    }
+
+    const data = await response.json();
+
+    guestCheckIn = data.checkIn;
+    guestCheckOut = data.checkOut;
+
+renderGuestDates();
+  } catch (error) {
+    console.error('Error loading guest dates:', error);
+  }
+}
+
+loadGuestDates();
 
 renderLanguage();
