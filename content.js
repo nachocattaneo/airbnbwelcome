@@ -95,7 +95,32 @@ const siteContent = {
         en: 'An intimate cocktail and tapas bar with a record player playing all night, great for a date. · Approx. 8 min walk'
       },
       mapUrl: 'https://www.google.com/maps/place/gris+gris/@-34.5832834,-58.4441557,17z/data=!3m2!4b1!5s0x95bcb5ed3e1db321:0xd8099abf88916007!4m6!3m5!1s0x95bcb58332650b99:0xff0799306ed71ec2!8m2!3d-34.5832878!4d-58.4415808!16s%2Fg%2F11s_rt2l2y?entry=ttu&g_ep=EgoyMDI2MDgwOS4wIKXMDSoASAFQAw%3D%3D'
-    }
+    },
+    {
+  name: { es: 'Vive Café', en: 'Vive Café' },
+  details: {
+    es: 'Café de especialidad con fuerte influencia colombiana, muy buen café y pastelería artesanal. Un lugar cálido y relajado, ideal para desayunar o hacer una pausa. · Aprox. 6 min caminando',
+    en: 'Specialty coffee shop with a strong Colombian influence, excellent coffee and artisan pastries. A warm and relaxed spot, ideal for breakfast or a coffee break. · Approx. 6 min walk'
+  },
+  mapUrl: 'https://maps.app.goo.gl/U2zySSvkoyVbtMnP9'
+},
+{
+  name: { es: 'Cuervo Café', en: 'Cuervo Café' },
+  details: {
+    es: 'Café de especialidad tostado en Buenos Aires, con excelentes filtrados, espresso y pastelería artesanal. Un clásico para disfrutar un buen café en un ambiente relajado. · Aprox. 4 min caminando',
+    en: 'Specialty coffee roasted in Buenos Aires, with excellent filter coffee, espresso and artisan pastries. A local favourite for enjoying great coffee in a relaxed setting. · Approx. 4 min walk'
+  },
+  mapUrl: 'https://maps.app.goo.gl/SX9xsdgM5vwiwdjG8'
+},
+{
+  name: { es: 'Artemisia', en: 'Artemisia' },
+  details: {
+    es: 'Restaurante de cocina natural con opciones vegetarianas, veganas y sin gluten. Su propuesta combina platos frescos y nutritivos con una pastelería ideal para desayunar o merendar. · Aprox. 2 min caminando',
+    en: 'Natural cuisine restaurant with vegetarian, vegan and gluten-free options. Its menu combines fresh, nutritious dishes with pastries that are perfect for breakfast or afternoon tea. · Approx. 2 min walk'
+  },
+  mapUrl: 'https://maps.app.goo.gl/g6ihwkH6dgEkHjiY8'
+},
+    
   ],
   weeklyActivities: {
     sourceUrl: '',
