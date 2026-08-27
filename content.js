@@ -4,7 +4,7 @@ const guestConfig = {
   defaultLanguage: 'en',
 
   agendas: {
-  instagram: 'https://www.instagram.com/p/DcPH-yIiY0f/?img_index=1',
+  instagram: 'https://www.instagram.com/p/DchSvmViUaN/?img_index=1',
   timeOut: 'https://www.instagram.com/p/Dbf1Y_xFHSq/?img_index=1'
 }
 };
