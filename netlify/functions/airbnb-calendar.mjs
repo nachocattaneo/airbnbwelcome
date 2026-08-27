@@ -36,9 +36,15 @@ export default async () => {
   const today = new Date();
   const todayString = today.toISOString().slice(0, 10).replaceAll("-", "");
 
-  const nextReservation = events.find(
-    (event) => event.start >= todayString
-  );
+  const currentReservation = events.find(
+  (event) =>
+    event.start <= todayString &&
+    todayString < event.end
+);
+
+const nextReservation = currentReservation || events.find(
+  (event) => event.start >= todayString
+); 
 
   if (!nextReservation) {
     console.log("No upcoming Airbnb reservations.");
