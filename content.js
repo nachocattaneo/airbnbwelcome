@@ -1,11 +1,11 @@
 const guestConfig = {
-  welcomeEs: 'BIENVENIDA, LIANNE!',
-  welcomeEn: 'WELCOME, LIANNE!',
-  defaultLanguage: 'en',
+  welcomeEs: 'BIENVENIDA, VIRGINIA!',
+  welcomeEn: 'WELCOME, VIRGINIA!',
+  defaultLanguage: 'es',
 
   agendas: {
-  instagram: 'https://www.instagram.com/p/DchSvmViUaN/?img_index=1',
-  timeOut: 'https://www.instagram.com/p/DcvrMZWlE8T/?img_index=1'
+  instagram: 'https://www.instagram.com/p/Dd7XLi-ieR1/?img_index=1',
+  timeOut: 'https://www.instagram.com/p/Dd6SyC7lL7L/?img_index=10'
 }
 };
 const siteContent = {
