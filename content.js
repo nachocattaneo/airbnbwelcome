@@ -1,10 +1,10 @@
 const guestConfig = {
-  welcomeEs: 'BIENVENIDA, VIRGINIA!',
-  welcomeEn: 'WELCOME, VIRGINIA!',
+  welcomeEs: 'BIENVENIDO, MAXI!',
+  welcomeEn: 'WELCOME, MAXI!',
   defaultLanguage: 'es',
 
   agendas: {
-  instagram: 'https://www.instagram.com/p/Dd7XLi-ieR1/?img_index=1',
+  instagram: 'https://www.instagram.com/p/DefRYBeicul/?img_index=1',
   timeOut: 'https://www.instagram.com/p/Dd6SyC7lL7L/?img_index=10'
 }
 };
