@@ -1,7 +1,7 @@
 const guestConfig = {
-  welcomeEs: 'BIENVENIDO, MAXI!',
-  welcomeEn: 'WELCOME, MAXI!',
-  defaultLanguage: 'es',
+  welcomeEs: 'BIENVENIDO, OLEG!',
+  welcomeEn: 'WELCOME, OLEG!',
+  defaultLanguage: 'en',
 
   agendas: {
   instagram: 'https://www.instagram.com/p/DefRYBeicul/?img_index=1',
