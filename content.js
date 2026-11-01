@@ -1,6 +1,6 @@
 const guestConfig = {
-  welcomeEs: 'BIENVENIDO, OLEG!',
-  welcomeEn: 'WELCOME, OLEG!',
+  welcomeEs: 'BIENVENIDO, CODY!',
+  welcomeEn: 'WELCOME, CODY!',
   defaultLanguage: 'en',
 
   agendas: {
