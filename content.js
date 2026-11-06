@@ -1,11 +1,11 @@
 const guestConfig = {
-  welcomeEs: 'BIENVENIDO, CODY!',
-  welcomeEn: 'WELCOME, CODY!',
+  welcomeEs: 'BIENVENIDA, KAROLIN!',
+  welcomeEn: 'WELCOME, KAROLIN!',
   defaultLanguage: 'en',
 
   agendas: {
-  instagram: 'https://www.instagram.com/p/DefRYBeicul/?img_index=1',
-  timeOut: 'https://www.instagram.com/p/Dd6SyC7lL7L/?img_index=10'
+  instagram: 'https://www.instagram.com/p/DfVUrVCCUlt/?img_index=1',
+  timeOut: 'https://www.instagram.com/p/DfKIEKOmYUc/?img_index=1'
 }
 };
 const siteContent = {
