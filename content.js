@@ -1,10 +1,10 @@
 const guestConfig = {
-  welcomeEs: 'BIENVENIDA, KAROLIN!',
-  welcomeEn: 'WELCOME, KAROLIN!',
-  defaultLanguage: 'en',
+  welcomeEs: 'BIENVENIDA, NATI!',
+  welcomeEn: 'WELCOME, NATI!',
+  defaultLanguage: 'es',
 
   agendas: {
-  instagram: 'https://www.instagram.com/p/DfVUrVCCUlt/?img_index=1',
+  instagram: 'https://www.instagram.com/p/DfnXIQsILTF/?img_index=1',
   timeOut: 'https://www.instagram.com/p/DfKIEKOmYUc/?img_index=1'
 }
 };
